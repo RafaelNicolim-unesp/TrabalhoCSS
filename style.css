@@ -113,14 +113,23 @@ main section {
   padding: 10%;
   border-radius: 50px;
   background-color: #c4add8;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.plano{
+  display: block;
+  padding: 5%;
+  border-radius: 50px;
+  background-color: #a165d4;
+  margin-bottom: 10px;
 }
 
 #btEscolha {
   font-size: 15px;
+  color: black;
   padding: 1%;
   border-radius: 50px;
-  background-color: antiquewhite;
+  background-color:#a165d4;
 }
 
 section h2 {
