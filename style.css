@@ -43,6 +43,7 @@ header div img {
 
 .logo {
   height: 60px;
+  margin-bottom: 10px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -108,7 +109,8 @@ main {
   min-width: 62vw;
 }
 
-aside, main {
+aside,
+main {
   background-color: #52485a;
 }
 
@@ -129,12 +131,13 @@ section h4 {
   color: #381f4e;
 }
 
-.treino{
+.treino {
   color: white;
   display: block;
   padding: 1%;
   border-radius: 50px;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
+  ;
   background-color: #381f4e;
 }
 
@@ -145,10 +148,10 @@ section h4 {
   transform-origin: top center;
 }
 
-.plano{
+.plano {
   display: block;
   padding: 5%;
-  border-radius: 50px;
+  border-radius: 8px;
   color: white;
   background-color: #381f4e;
   margin-bottom: 10px;
@@ -166,7 +169,7 @@ section h4 {
   color: white;
   padding: 1%;
   border-radius: 50px;
-  background-color:#381f4e;
+  background-color: #381f4e;
   animation: pulso 1.5s infinite ease-in-out;
   display: inline-block;
   transition: transform 0.3s;
@@ -212,38 +215,42 @@ aside:last-of-type img {
 
 footer {
   grid-area: footer;
+  display: flex;
   padding: 20px;
-  align-items: center;
+  justify-content: center;
   background-color: #381f4e;
   color: white;
-  text-align: center;
-  text-justify: center;
 }
 
-  @media (max-width: 768px) {
-    .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "header"
-        "left"
-        "main"
-        "right"
-        "footer";
-    }
+@media (max-width: 768px) {
 
-    nav ul {
-      grid-auto-flow: row;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    aside:last-of-type {
-      margin-left: 0;
-    }
+  * {
+    font-size: 12px;
   }
 
-  @keyframes balanco {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "left"
+      "main"
+      "right"
+      "footer";
+  }
+
+  nav ul {
+    grid-auto-flow: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  aside:last-of-type {
+    margin-left: 0;
+  }
+}
+
+@keyframes balanco {
   0% {
     transform: rotate(-40deg);
   }
@@ -258,11 +265,13 @@ footer {
 }
 
 @keyframes pulso {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
 
   50% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
 }
